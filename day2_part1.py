@@ -16,4 +16,4 @@ with open("day2_data.txt") as f:
         return intcode
 
 result = run_intcode_program(intcode)
-print(result)
+print(result[0])
