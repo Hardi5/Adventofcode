@@ -7,7 +7,7 @@ class TestFuelCalculation(unittest.TestCase):
 
 
         masses = ["12\n", "14\n", "1969\n", "100756\n"]
-        expected_fuel = 3455
+        expected_fuel = 34241
         self.assertEqual(calculate_fuel(masses), expected_fuel)
         
 
