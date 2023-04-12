@@ -5,7 +5,7 @@ from day1_part2 import calculate_fuel
 class TestCalculateFuel(unittest.TestCase):
     def test_calculate_fuel(self):
         masses = [12, 14, 1969, 100756]
-        expected_fuel = 10
+        expected_fuel = 51316
         self.assertEqual(calculate_fuel(masses), expected_fuel)
 
         self.assertEqual(calculate_fuel([14]), 2)
