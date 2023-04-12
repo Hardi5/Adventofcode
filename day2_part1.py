@@ -9,7 +9,7 @@ with open("day2_data.txt") as f:
             if opcode == 1:
                 intcode[intcode[i+3]] = intcode[intcode[i+1]] + intcode[intcode[i+2]]
             elif opcode == 2:
-                intcode[intcode[i+3]] = intcode[intcode[i+1]] + intcode[intcode[i+2]]
+                intcode[intcode[i+3]] = intcode[intcode[i+1]] * intcode[intcode[i+2]]
             elif opcode == 99:
                 break
             i += 4
