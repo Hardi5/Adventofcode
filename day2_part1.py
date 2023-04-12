@@ -5,7 +5,7 @@ with open("day2_data.txt") as f:
     def run_intcode_program(intcode):
         i = 0
         while i < len(intcode):
-            opcode = intcode[0]
+            opcode = intcode[i]
             if opcode == 1:
                 intcode[intcode[i+3]] = intcode[intcode[i+1]] + intcode[intcode[i+2]]
             elif opcode == 2:
@@ -15,5 +15,5 @@ with open("day2_data.txt") as f:
             i += 4
         return intcode
 
-result = run_intcode_program(masses)
+result = run_intcode_program(intcode)
 print(result)
