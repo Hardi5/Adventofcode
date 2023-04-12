@@ -10,4 +10,5 @@ def calculate_fuel(masses):
         total_fuel += fuel
     return total_fuel
 
+#Should pring 3239503 according to testcase
 print("Total fuel required", calculate_fuel(masses))
