@@ -1,7 +1,5 @@
 import pytest
-
-
-
+from day2_part1 import run_intcode_program
 
 def test_run_intcode_program():
     assert run_intcode_program([1,0,0,0,99]) == [2,0,0,0,99]
