@@ -1,4 +1,6 @@
-def find_inputs_for_output(program):
+def find_inputs_for_output(filename, target_output):
+    with open(filename, 'r') as f:
+        program = [int(x) for x in f.read().split(',')]
 
     target_output = 19690720
 
@@ -19,8 +21,5 @@ def find_inputs_for_output(program):
                         break
 
             if p[0] == target_output:
-                print(100 * noun + verb)
-                break
-        else:
-            continue
-        break
+                return 100 * noun + verb
+    return None
