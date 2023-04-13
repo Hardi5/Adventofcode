@@ -23,3 +23,7 @@ def find_inputs_for_output(filename, target_output):
             if p[0] == target_output:
                 return 100 * noun + verb
     return None
+
+if __name__ == '__main__':
+    result = find_inputs_for_output("day2_data.txt", 19690720)
+    print(result)
